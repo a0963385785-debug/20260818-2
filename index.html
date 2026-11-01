@@ -9,7 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="小柯攝影工作室 | 臺中婚紗婚禮紀錄">
   <meta property="og:description" content="自然、不過度修飾，重視情緒與現場關係。臺中婚紗、婚禮紀錄、形象照。">
-  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1646325311277-0c35409fdd57?auto=format&fit=crop&w=1200&h=630&q=75">
   <meta name="theme-color" content="#f6f1ea">
   <script type="application/ld+json">
   {
@@ -85,7 +85,8 @@
       display: flex; align-items: center;
       background:
         linear-gradient(rgba(30,24,20,.45), rgba(30,24,20,.55)),
-        url("images/hero.jpg") center / cover no-repeat;
+        url("images/hero.jpg") center / cover no-repeat,
+        url("https://images.unsplash.com/photo-1646325311277-0c35409fdd57?auto=format&fit=crop&w=1920&h=1080&q=75") center / cover no-repeat;
       color: #fff; text-align: center;
     }
     .hero .container { padding: 120px 0 80px; }
@@ -163,6 +164,8 @@
     }
     input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
     textarea { min-height: 130px; resize: vertical; }
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    .btn:disabled { opacity: .6; cursor: not-allowed; }
     .form-actions { grid-column: 1 / -1; }
     .form-msg { grid-column: 1 / -1; font-size: .9rem; color: var(--accent-dark); min-height: 1.4em; }
 
@@ -244,12 +247,12 @@
         <h3>婚紗</h3>
         <p class="desc">在臺中的街角、海線與山景之間，拍出像你們日常的婚紗。</p>
         <div class="grid">
-          <figure><img src="images/wedding-01.jpg" alt="臺中戶外自然光婚紗攝影，新人並肩走在林蔭小路" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/wedding-02.jpg" alt="新娘白紗與捧花特寫，柔和逆光婚紗照" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/wedding-03.jpg" alt="新郎新娘相視而笑的自然互動婚紗寫真" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/wedding-04.jpg" alt="海邊黃昏婚紗外拍，新人牽手剪影" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/wedding-05.jpg" alt="室內窗光下的新娘婚紗半身人像" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/wedding-06.jpg" alt="新人在老街巷弄散步的生活感婚紗照" loading="lazy" width="960" height="1200"></figure>
+          <figure><img src="images/wedding-01.jpg" alt="新人走在山丘上的自然光戶外婚紗照" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/wedding-02.jpg" alt="新人在草地上親吻的自然婚紗寫真" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/wedding-03.jpg" alt="新人站在海岸邊的日間婚紗外拍" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/wedding-04.jpg" alt="新郎新娘在沙灘上漫步的海邊婚紗照" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1617724975854-70b5d0cedb0a?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/wedding-05.jpg" alt="窗邊自然光下穿白紗的新娘婚紗人像" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1622277430358-f4d134452e2e?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/wedding-06.jpg" alt="新婚夫妻走過田野的生活感婚紗照" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
         </div>
       </div>
 
@@ -257,12 +260,12 @@
         <h3>婚禮紀錄</h3>
         <p class="desc">從迎娶到宴客，記錄來不及重來的笑與淚。</p>
         <div class="grid">
-          <figure><img src="images/event-01.jpg" alt="婚禮儀式中新郎新娘交換戒指的瞬間紀錄" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/event-02.jpg" alt="婚禮當天新娘準備時與伴娘的自然互動" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/event-03.jpg" alt="父親牽著新娘走紅毯的婚禮紀錄照" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/event-04.jpg" alt="婚宴現場賓客舉杯歡笑的氛圍紀錄" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/event-05.jpg" alt="新人擁抱落淚的婚禮感動瞬間" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/event-06.jpg" alt="婚禮佈置與捧花細節紀錄攝影" loading="lazy" width="960" height="1200"></figure>
+          <figure><img src="images/event-01.jpg" alt="戶外婚禮儀式的白色座椅與紅毯燈光佈置紀錄" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1607861884586-c7cfaed16290?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/event-02.jpg" alt="新郎新娘站在木牆旁的婚禮紀錄照" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1595407753234-0882f1e77954?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/event-03.jpg" alt="藍色西裝新郎親吻新娘的婚禮感動瞬間" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/event-04.jpg" alt="新郎站在手捧花束的新娘身旁的婚禮紀錄" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/event-05.jpg" alt="雙重曝光的婚禮捧花與訂婚鑽戒細節" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/event-06.jpg" alt="新人手上婚戒的婚禮細節特寫" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1533091090875-1ff4acc497dd?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
         </div>
       </div>
 
@@ -270,12 +273,12 @@
         <h3>形象照</h3>
         <p class="desc">專業又不僵硬，適合個人品牌、履歷與團隊介紹。</p>
         <div class="grid">
-          <figure><img src="images/portrait-01.jpg" alt="臺中商務形象照，上班族自然微笑半身人像" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/portrait-02.jpg" alt="創業者在工作空間的個人品牌形象照" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/portrait-03.jpg" alt="女性專業人士戶外自然光形象照" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/portrait-04.jpg" alt="男性主管西裝形象照，背景簡潔" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/portrait-05.jpg" alt="手作職人工作中的生活感形象照" loading="lazy" width="960" height="1200"></figure>
-          <figure><img src="images/portrait-06.jpg" alt="團隊成員並肩站立的企業形象合照" loading="lazy" width="960" height="1200"></figure>
+          <figure><img src="images/portrait-01.jpg" alt="穿白襯衫微笑的女性室內形象照" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1758691737587-7630b4d31d16?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/portrait-02.jpg" alt="身穿西裝自信微笑的專業女性形象照" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1758518727888-ffa196002e59?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/portrait-03.jpg" alt="穿黑色西裝外套微笑的女性商務形象照" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1585240975858-7264fd020798?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/portrait-04.jpg" alt="穿藍色西裝外套倚牆微笑的女性形象照" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1590650213165-c1fef80648c4?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/portrait-05.jpg" alt="穿藍色西裝站立的男性商務形象照" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
+          <figure><img src="images/portrait-06.jpg" alt="四位穿著商務服裝並肩而立的專業團隊合照" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1758518731468-98e90ffd7430?auto=format&fit=crop&w=960&h=1200&q=75'"></figure>
         </div>
       </div>
     </div>
@@ -418,7 +421,7 @@
   <!-- 6. 關於我 -->
   <section id="about" aria-labelledby="about-title">
     <div class="container about">
-      <img src="images/about.jpg" alt="小柯攝影師在臺中戶外手持相機拍攝的工作照" loading="lazy" width="960" height="1200">
+      <img src="images/about.jpg" alt="戴帽手持專業相機在戶外拍攝的攝影師" loading="lazy" width="960" height="1200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1758525589426-c2b1075164f6?auto=format&fit=crop&w=960&h=1200&q=75'">
       <div>
         <p class="eyebrow">About</p>
         <h2 class="section-title" id="about-title">關於我</h2>
@@ -482,6 +485,10 @@
           <label for="message">留言</label>
           <textarea id="message" name="message" placeholder="想拍的風格、人數、特別需求…"></textarea>
         </div>
+        <div class="hp" aria-hidden="true">
+          <label for="website">請勿填寫此欄位</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
         <div class="form-actions">
           <button class="btn btn-primary" type="submit">送出詢問</button>
         </div>
@@ -515,10 +522,16 @@
 </footer>
 
 <script>
-  // 表單：無後端時以 mailto 開啟郵件程式。上線後可改為 Formspree 等服務。
-  document.getElementById('inquiry-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    var f = new FormData(e.target);
+  // ★ 貼上你的 Google Apps Script「網頁應用程式」網址（結尾是 /exec）。
+  //   設定方式見 README.md。留空時會退回以 mailto 開啟郵件程式。
+  var APPS_SCRIPT_URL = '';
+  var FALLBACK_EMAIL = 'hello@example.com';
+
+  var form = document.getElementById('inquiry-form');
+  var msg = document.getElementById('form-msg');
+  var btn = form.querySelector('button[type="submit"]');
+
+  function fallbackMailto(f) {
     var body = [
       '姓名：' + f.get('name'),
       '聯絡方式：' + f.get('contact'),
@@ -528,10 +541,40 @@
       '預算：' + (f.get('budget') || '未填'),
       '留言：' + (f.get('message') || '無')
     ].join('\n');
-    window.location.href = 'mailto:hello@example.com?subject=' +
+    window.location.href = 'mailto:' + FALLBACK_EMAIL + '?subject=' +
       encodeURIComponent('【檔期詢問】' + f.get('type') + '｜' + f.get('name')) +
       '&body=' + encodeURIComponent(body);
-    document.getElementById('form-msg').textContent = '已為你開啟郵件程式，請確認內容後寄出。感謝你的詢問！';
+    msg.textContent = '已為你開啟郵件程式，請確認內容後寄出。感謝你的詢問！';
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = new FormData(form);
+
+    if (!APPS_SCRIPT_URL) { fallbackMailto(f); return; }
+
+    // 機器人陷阱欄位被填寫：假裝成功，不送出
+    if (f.get('website')) { msg.textContent = '已收到你的詢問，我會盡快回覆！'; form.reset(); return; }
+
+    btn.disabled = true;
+    btn.textContent = '送出中…';
+    msg.textContent = '';
+
+    // 以 x-www-form-urlencoded 送出，不會觸發 CORS 預檢；
+    // Apps Script 的回應無法跨網域讀取，因此用 no-cors，沒發生網路錯誤即視為已送出。
+    fetch(APPS_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      body: new URLSearchParams(f)
+    }).then(function () {
+      msg.textContent = '已收到你的詢問，我會在 1–2 個工作天內回覆。謝謝你！';
+      form.reset();
+    }).catch(function () {
+      msg.textContent = '送出失敗，請稍後再試，或直接來信 ' + FALLBACK_EMAIL + '。';
+    }).then(function () {
+      btn.disabled = false;
+      btn.textContent = '送出詢問';
+    });
   });
 </script>
 </body>
